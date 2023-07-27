@@ -27,3 +27,12 @@ int j = 0;
     }
 return newArray;
 }
+
+void PrintArray(string[] array) // функция вывода массива на консоль
+{
+    for (int i = 0; i < array.Length; i++)  
+    {
+        System.Console.Write(array[i] + ", ");
+    }
+}
+
