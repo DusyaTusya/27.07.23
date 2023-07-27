@@ -12,3 +12,18 @@ for (int i = 0; i < array.Length; i++)
         lengthNewArray += 1;
     }
 }
+
+string[] NewArray(string[] array) // функция создания нового массива, заполненного элементами по условию задачи
+{
+string[] newArray = new string[lengthNewArray];
+int j = 0;
+    for (int i = 0; i < array.Length; i += 1)
+    {
+        if (array[i].Length <= 3)
+        {
+            newArray[j] = array[i];
+            j += 1;
+        }
+    }
+return newArray;
+}
