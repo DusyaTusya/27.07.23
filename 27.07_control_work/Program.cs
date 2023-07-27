@@ -36,3 +36,6 @@ void PrintArray(string[] array) // функция вывода массива н
     }
 }
 
+string[] newArray = NewArray(array);
+
+PrintArray(newArray);
