@@ -3,3 +3,12 @@
 // формирует новый массив из строк, длина которых меньше, либо равна 3 символам.
 
 string[] array = new string[7]{"hello", "3", "world", "yes", "76532", "a", "no"}; // создаем массив
+
+int lengthNewArray = 0; // находим длину будущего массива
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3) 
+    {
+        lengthNewArray += 1;
+    }
+}
